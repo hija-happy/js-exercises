@@ -8,8 +8,7 @@ function showTime(){
     var session ='PM';
 
     if(h=12)
-        session = 'AM'
-    if(h>12)
+        session = 'AM';
         
 
 
