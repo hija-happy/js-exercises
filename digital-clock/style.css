@@ -11,6 +11,7 @@ body {
     font-family: Orbitron;
     background-color: black;
     color: darkgreen;
-    font-size: 30px;
+    letter-spacing: 7px;
+    font-size: 80px;
     font-weight: bold;
 }
