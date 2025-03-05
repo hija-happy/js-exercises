@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    font-size: 25px;
+    border: none;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+input {
+    margin: 10px;
+    height: 100px;
+    width: 300px;    
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 2rem;
+}
+table {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color:hsl(0, 0%, 40%) ;
+}
+
+button:active{
+    background-color:hsl(0, 0%, 60%) ;
+}
+
+.operator-btn {
+    background-color: orangered;
+}
+
+.operator-btn:hover {
+    background-color: rgb(255, 109, 56)
+}
+.operator-btn:active {
+    background-color: rgb(255, 150, 111)
+}
