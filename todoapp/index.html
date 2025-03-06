@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To DO List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="row">
+            TO DO LIST
+        </h1>
+
+        <input type="text" class="row" id="box">
+        <button onclick="add_item()">ADD</button>
+
+        <div class="row">
+            <ul id="list-item">
+
+            </ul>
+        </div>
+    </div>
+   
+</body>
+
+<script>
+    function add_item() {
+       const item = document.getElementById("box");
+       const list_item = document.getElementById("list-item");
+
+       if(item.value !=""){
+        const make_li = document.createElement("li");
+        make_li.appendChild(document.createTextNode(item.value));
+        list_item.appendChild(make_li);
+        item.value ="";
+
+        make_li.onclick = function(){
+            this.parentNode.removeChild(this);
+        }
+       }
+
+       else {
+        alert('Please add your task')
+       }
+    }
+</script>
+</html>
